@@ -1,0 +1,85 @@
+@{
+
+ViewData["Title"] = "Register";
+
+}
+
+<div class="text-center">
+
+<h1 class="display-4">Register</h1>
+
+<div class="jumbotron">
+
+<strong>ASP.NET MVC</strong>
+
+</div>
+
+@* display variables *@
+
+<h4 style="color:purple">
+
+<b>FirstName:</b> @ViewBag.firstname <br />
+
+<b>LastName:</b> @ViewBag.lastname <br />
+
+<b>Email:</b> @ViewBag.email <br />
+
+<b>Password:</b> @ViewBag.password <br />
+
+@* <b>Encrypted Password:</b> @ViewBag.enPassword <br />
+
+<b>Decrypted Password:</b> @ViewBag.dePassword <br /> *@
+
+</h4>
+
+<hr />
+
+@* obtain values to insert into DB *@
+
+
+
+<form action="Register" method="post">
+
+<table>
+
+<tr>
+
+<td>First Name: </td>
+
+<td><input type="text" name="firstname" /></td>
+
+</tr>
+
+<tr>
+
+<td>Last Name: </td>
+
+<td><input type="text" name="lastname" /></td>
+
+</tr>
+
+<tr>
+
+<td>Email: </td>
+
+<td><input type="text" name="email" /></td>
+
+</tr>
+
+<tr>
+
+<td>Password: </td>
+
+<td><input type="text" name="password" /></td>
+
+</tr>
+
+<tr>
+
+<td colspan="2"><input type="submit" value="Submit Form" /></td>
+
+</tr>
+
+</table>
+
+</form>

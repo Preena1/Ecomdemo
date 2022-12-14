@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ShopaLot</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Ecomdemo.styles.css" asp-append-version="true" />
+     <link rel="shortcut icon" href="../images/logo-icon.png" />
+
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width,initial-scal=1.0">
+    <meta http-equip="X-UA-compatible" content="ie=edge">
+    @* <link rel="stylesheet" href="style.css" media="screen" type="text/css" /> *@
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        @* <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><image src="../images/logo-icon.png" 
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ShopaLot</a> 
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> *@
+
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a style="color:black;" asp-area="" asp-controller="Home" asp-action="Index"><image src="../images/logo-icon resized.png"
+                style="height:60px;">
+                </a>
+                @* <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">SHOPALOT</a> *@
+                </li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Register">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Product">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Login">Login</a>
+                        </li>
+
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+<section id="footer" style="margin-top: 40px;">
+                <footer class="container">
+                    <div class="footer-middle">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-s6 col-lg-3">
+                                    <div class="widget widget-about">
+                                        <img src="../images/logo-icon.png" class="footer-logo"
+                                            alt="Footer Logo" width="50" height="50">
+                                        <p>Be the change.  Shopalot is an eco retailer driving concious and environmenally friendly fashion.
+                                            Be fashionable but choose wisely. </p>
+
+                                        <div class="widget-call">
+                                            <i class="icon-phone"></i>
+                                            Got Question? Call us 24/7
+                                            <a style="color: #5441fc;">+27123115623</a>
+                                            @* <a href="tel:#" style="color: #fc41a8;">+27123115623</a> *@
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="widget">
+                                        <h4 class="widget-title">Useful Links</h4><!-- End .widget-title -->
+
+                                        <ul class="widget-list">
+                                            @* <li><a href="about.html" style="color: #fc41a8;">About Company</a></li> *@
+                                            <li><a style="color: #5441fc;" asp-area="" asp-controller="Home" asp-action="About">About Company</a></li>
+                                            @* <li><a href="#" style="color:#fc41a8;">Our Services</a></li> *@
+                                            <li><a style="color: #5441fc;" asp-area="" asp-controller="Home" asp-action="Product">Our Products</a></li>
+                                            @* <li><a href="#" style="color: #fc41a8;">Sign In</a></li> *@
+                                            <li><a style="color: #5441fc;" asp-area="" asp-controller="Home" asp-action="Login">Sign In</a></li>  
+                                            @* <li><a href="faq.html" style="color: #fc41a8;">View Cart</a></li> *@
+                                            <li><a style="color: #5441fc;" asp-area="" asp-controller="Home" asp-action="Cart">View Cart</a></li> 
+                                            @* <li><a href="contact.html" style="color: #fc41a8;">Contact us</a></li> *@
+                                            <li><a style="color: #5441fc;" asp-area="" asp-controller="Home" asp-action="Contact">Contact Us</a></li> 
+                                        </ul>
+                                    </div>
+                                </div>
+                                @* <div class="col-sm-6 col-lg-3"> *@
+                                <div class="col-sm-8 col-lg-3">
+                                    <div class="widget">
+                                        <h3>Customer Service</h3>
+
+                                        <ul class="widget-list">
+                                            @* <li><a href="#" style="color: #fc41a8;">Payment Methods</a></li> *@
+                                            <li><a style="color: #5441fc;" asp-area="" asp-controller="Home" asp-action="Shipping">Delivery Info</a></li>                                           
+                                            @* <li><a href="#" style="color: #fc41a8;">Money-back guarantee!</a></li> *@
+                                            <li><a style="color: #5441fc;" asp-area="" asp-controller="Home" asp-action="Contact">Help</a></li>
+                                            @* <li><a href="#" style="color: #fc41a8;">Shipping</a></li> *@
+                                            <li><a style="color: #5441fc;" asp-area="" asp-controller="Home" asp-action="FAQ">FAQ's</a></li>
+                                            @* <li><a href="terms.html" style="color: #fc41a8;">Terms and conditions</a></li> *@
+                                            <li><a style="color: #5441fc;" asp-area="" asp-controller="Home" asp-action="Terms">Terms and Conditions</a></li>
+                                            @* <li><a href="#" style="color: #fc41a8;">Privacy Policy</a></li> *@
+                                            <li><a style="color: #5441fc;"asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                @* <div class="col-sm-6 col-lg-3">
+                                    <div class="widget">
+                                        <h4 class="widget-title">My Account</h4><!-- End .widget-title -->
+
+                                        <ul class="widget-list">
+                                            <li><a href="login.html"  style="color: #fc41a8;">Sign In</a></li>
+                                            <li><a href="cart.html" style="color: #fc41a8;">View Cart</a></li>
+                                            <li><a href="#" style="color: #fc41a8;">My Wishlist</a></li>
+                                            <li><a href="cart.html"style="color: #fc41a8;">Track My Order</a></li>
+                                            <li><a href="contact.html"style="color: #fc41a8;">Help</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> *@
+
+					<div class="footer-bottom">
+						<div class="container">
+							<p style="text-align:center;">Copyright © 2022. All Rights Reserved.</p>
+							<!-- <figure style="float: right;">
+								<img src="../images/products/payments.png" alt="Payment methods" width="272"
+									height="20">
+							</figure> -->
+						</div>
+					</div>
+				</footer>
+			</section>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/jquery.store.js" asp-append-version="true"></script>
+    <script src="~/js/main.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

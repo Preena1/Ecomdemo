@@ -1,0 +1,99 @@
+@{
+    ViewData["Title"] = "Cart Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome @ViewBag.Name</h1>
+    
+</div>
+
+<title>Your Shopping Cart</title>
+@* <!DOCTYPE html>
+<html>
+
+<head>
+	<title>Your Shopping Cart</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.store.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="../images/logo-icon.png" />
+</head> *@
+<body>
+<div id="site">
+			<header id="masthead">
+			</header>
+			<div id="content">
+				<h1>Your Shopping Cart</h1>
+				<form id="shopping-cart" action="cart.html" method="post">
+					<table class="shopping-cart">
+						<thead>
+							<tr>
+								<th scope="col">Item</th>
+								<th scope="col">Qty</th>
+								<th scope="col" colspan="2">Price</th>
+							</tr>
+						</thead>
+						<tbody>
+
+						</tbody>
+					</table>
+					<p id="sub-total">
+						<strong>Sub Total: <span id="stotal"></span></strong>
+					</p>
+					<ul id="shopping-cart-actions">
+						<li>	
+						<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" asp-area="" asp-controller="Home" asp-action="Cart" style="background-color: #5441fc"/>
+							  
+						</li>
+					<li>
+						
+	
+						 <input type="submit"  name="delete" id="empty-cart"class="btn"value="Empty Cart" asp-area="" asp-controller="Home" asp-action="Cart" style="background-color: #5441fc"/> 
+	                    
+						
+						
+					</li>
+						<li>
+							@* <a href="product.html" class="btn" style="background-color: #4182fc">Continue Shopping</a> *@
+						<a class="btn" style="background-color: #5441fc" asp-area="" asp-controller="Home" asp-action="Product">Continue Shopping</a>
+                        </li>
+						<li>
+							@* <a href="checkout.html" class="btn" style="background-color: #4182fc;">Go To Checkout</a> *@
+							<a class="btn" style="background-color: #5441fc" asp-area="" asp-controller="Home" asp-action="Checkout">Go To Checkout</a>
+
+						</li>
+					</ul>
+				</form>
+			</div>
+
+
+
+		</div>
+
+
+
+</body>
+					@* <p id="sub-total">
+						<strong>Sub Total</strong>: <span id="stotal"></span>
+					</p>
+					<ul id="shopping-cart-actions">
+						<!-- <li>
+						<input type="submit" name="update" id="update-cart" class="btn" value="Update Cart" />
+					</li>
+					<li>
+						<input type="submit" name="delete" id="empty-cart" class="btn" value="Empty Cart" />
+					</li> -->
+						<li>
+							<a href="Product.html" class="btn" style="background-color:#fc41e3">Continue Shopping</a>
+						</li>
+						<li>
+							<a href="checkout.html" class="btn" style="background-color:#fc41e3">Go To Checkout</a>
+						</li>
+					</ul>
+				</form>
+			</div> *@
+
+
