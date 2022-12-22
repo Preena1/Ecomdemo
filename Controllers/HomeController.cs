@@ -14,6 +14,7 @@ namespace Ecomdemo.Controllers
 public class HomeController : Controller
 {
 
+// <-------Note connection string and password to database---------->
 private string constr = "server=localhost;port=3306;uid=ifundiuser;" +
      "pwd=ifundiuser123; database=shopalot_db;charset=utf8;sslmode=none;AllowPublicKeyRetrieval=True";
 
@@ -92,6 +93,7 @@ public IActionResult Login()
             return View();
         }
 
+
      [HttpPost] 
         public ActionResult Register(UserModel obj)
         {
@@ -99,7 +101,7 @@ public IActionResult Login()
             ViewBag.lastname = obj.lastname;
             ViewBag.email = obj.email;
             ViewBag.password = obj.password;
- 
+ // <-------Will build encoding password process in future development---------->
             // string enPassword = obj.EncodePasswordToBase64(obj.password);
             // string dePassword = obj.DecodeFrom64(enPassword);
  
@@ -157,7 +159,7 @@ public IActionResult Login()
         {
              var emailid = obj.email;
              var pword = obj.password;
-    
+    // <-------Added in emailid and password match to gain access and login---------->
             string query = $"SELECT firstname, email, password FROM userlogin where email = '{emailid}' and password ='{pword}';";
     
             using (MySqlCommand cmd = new MySqlCommand(query))
@@ -169,6 +171,7 @@ public IActionResult Login()
                     while (sdr.Read())
                     {
                         // obj.password = string.Format("{0:S}", sdr["password"]);
+               // <-------Used a Global Model to pull in first name for welcome login---------->          
                         GlobalModel.firstname = string.Format("{0:S}", sdr["firstname"]);
                         if (string.Compare(obj.password,string.Format("{0:S}", sdr["password"]),false)==0)
                             return RedirectToAction("Index");

@@ -25,14 +25,8 @@
 
 <body>
     <header>
-        @* <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><image src="../images/logo-icon.png" 
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ShopaLot</a> 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> *@
+
+@* <-------Navigation bar at the top of the website----------> *@
 
             <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -79,6 +73,7 @@
         </main>
     </div>
 
+@* <-------Footer section----------> *@
 <section id="footer" style="margin-top: 40px;">
                 <footer class="container">
                     <div class="footer-middle">
@@ -166,7 +161,7 @@
 					</div>
 				</footer>
 			</section>
-
+@* <-------Pulling through the javascripts for the layout of the application----------> *@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

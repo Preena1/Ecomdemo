@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9gXNRjpiHGNacFR5DlSHr5PI+ovG/SqhRa8hTMvclFMD53oNp5orWwFn15Prj2QZYhadng8scxr4wSHVZlU/Jw==",
+  "dgSpecHash": "a2MoCP8ZDGNfTRiAaLMvY15Q4RlzpBo6/tD/u+DUhuKpnvd5w49AArCtTXdJAoTOf4qaLWloCjE8ibEXXa2a4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bhoolap1\\OneDrive - Telkom\\Documents\\System Development IFUNDI\\Backendcoding\\MVC_Ecom1\\Ecomdemo\\Ecomdemo.csproj",
+  "projectFilePath": "C:\\Users\\bhoolap1\\OneDrive - Telkom\\Documents\\System Development IFUNDI\\Backendcoding\\Final MVC ShopALot_Preena\\Ecomdemo\\Ecomdemo.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bhoolap1\\.nuget\\packages\\google.protobuf\\3.19.4\\google.protobuf.3.19.4.nupkg.sha512",
     "C:\\Users\\bhoolap1\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",

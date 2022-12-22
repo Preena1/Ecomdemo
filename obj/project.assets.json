@@ -898,11 +898,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bhoolap1\\OneDrive - Telkom\\Documents\\System Development IFUNDI\\Backendcoding\\MVC_Ecom1\\Ecomdemo\\Ecomdemo.csproj",
+      "projectUniqueName": "C:\\Users\\bhoolap1\\OneDrive - Telkom\\Documents\\System Development IFUNDI\\Backendcoding\\Final MVC ShopALot_Preena\\Ecomdemo\\Ecomdemo.csproj",
       "projectName": "Ecomdemo",
-      "projectPath": "C:\\Users\\bhoolap1\\OneDrive - Telkom\\Documents\\System Development IFUNDI\\Backendcoding\\MVC_Ecom1\\Ecomdemo\\Ecomdemo.csproj",
+      "projectPath": "C:\\Users\\bhoolap1\\OneDrive - Telkom\\Documents\\System Development IFUNDI\\Backendcoding\\Final MVC ShopALot_Preena\\Ecomdemo\\Ecomdemo.csproj",
       "packagesPath": "C:\\Users\\bhoolap1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bhoolap1\\OneDrive - Telkom\\Documents\\System Development IFUNDI\\Backendcoding\\MVC_Ecom1\\Ecomdemo\\obj\\",
+      "outputPath": "C:\\Users\\bhoolap1\\OneDrive - Telkom\\Documents\\System Development IFUNDI\\Backendcoding\\Final MVC ShopALot_Preena\\Ecomdemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bhoolap1\\AppData\\Roaming\\NuGet\\NuGet.Config",

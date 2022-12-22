@@ -3,6 +3,7 @@
 ViewData["Title"] = "Register";
 
 }
+<!------Section allows potential customer to register their details ------->
 
 <div class="text-center">
 
@@ -14,7 +15,7 @@ ViewData["Title"] = "Register";
 
 </div>
 
-@* display variables *@
+@* Display variables on console for validation *@
 
 <h4 style="color:purple">
 
@@ -26,15 +27,14 @@ ViewData["Title"] = "Register";
 
 <b>Password:</b> @ViewBag.password <br />
 
-@* <b>Encrypted Password:</b> @ViewBag.enPassword <br />
+<!------Currently do not have an encryption built for password - is planned for thenext phase to increase security ------->
 
-<b>Decrypted Password:</b> @ViewBag.dePassword <br /> *@
 
 </h4>
 
 <hr />
 
-@* obtain values to insert into DB *@
+<!------The above credentials are inputted into the database ------->
 
 
 

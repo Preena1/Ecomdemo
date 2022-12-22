@@ -1,10 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<!------Text to personalise Welcome with First Name once logged in ------->
 <div class="text-center">
-    <h1 class="display-4">Welcome @ViewBag.Name</h1>
+       <h1 class="display-4">Welcome @ViewBag.Name</h1>
 </div>
 
+<!------Section Index(Home) Page ------->
 
 <div class="slider">
             <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
@@ -43,7 +45,7 @@
 
 
 
-        <!------Clothing Collections----->
+        <!------Defining categories for overall clothing----->
         <section class="Clothing Collections">
             <div class="container">
                 <h2 style="text-align: center; color: #5441fc;">Explore Featured Categories</h2>
@@ -76,6 +78,7 @@
                         <h2>New Arrivals</h2>
                     </div>
                     <ul class="filter-menu">
+                        <!------Provides a filter for categories, pulls through javascript, site.js ------->
                         <li data-target="Reset">Reset</li>
                         <li data-target="Mens">Mens</li>
                         <li data-target="Ladies">Ladies</li>
